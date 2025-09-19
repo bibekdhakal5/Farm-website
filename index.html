@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lalnidhi Honey Farm</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="https://images.unsplash.com/photo-1505576391880-3f7df6c7d9d6?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=example" alt="Honey" class="logo">
+        <div>
+          <h1>Lalnidhi Honey Farm</h1>
+          <p class="sub">Pure honey from Tallo Koreng, Kaligandaki-6, Gulmi</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#shop">Shop</a>
+        <a href="#booking">Booking</a>
+        <a href="#location">Location</a>
+        <a href="#contact">Contact</a>
+        <a href="#" id="admin-link">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Pure. Natural. Lalnidhi Honey.</h2>
+          <p>Choose filtered or unfiltered honey. Fresh from our farm — order now.</p>
+          <a href="#shop" class="btn">Shop & Book</a>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1518972559570-8da8e1b4f8b1?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=example" alt="Pure honey jar">
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h3>About Us</h3>
+        <p>It is a farm where you can get very pure honey with full filtered or unfiltered as per your preference. We also provide beekeeping equipment.</p>
+      </div>
+    </section>
+
+    <!-- Shop -->
+    <section id="shop" class="section shop">
+      <div class="container">
+        <h3>Shop</h3>
+        <div class="products">
+          <div class="product">
+            <h4>Half Kg</h4>
+            <p class="price">NPR 600</p>
+            <button class="btn open-booking" data-product="Half Kg" data-price="600">Book Now</button>
+          </div>
+          <div class="product">
+            <h4>1 Kg</h4>
+            <p class="price">NPR 1200</p>
+            <button class="btn open-booking" data-product="1 Kg" data-price="1200">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking -->
+    <section id="booking" class="section booking">
+      <div class="container">
+        <h3>Booking</h3>
+        <form id="booking-form" class="form">
+          <label>
+            Product
+            <select id="product">
+              <option value="Half Kg">Half Kg — NPR 600</option>
+              <option value="1 Kg">1 Kg — NPR 1200</option>
+            </select>
+          </label>
+          <label>
+            Quantity
+            <input type="number" id="quantity" value="1" min="1"/>
+          </label>
+          <label>
+            Name
+            <input type="text" id="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Phone
+            <input type="tel" id="phone" placeholder="+977 98xxxxxxx" required />
+          </label>
+          <label>
+            Email (optional)
+            <input type="email" id="email" placeholder="you@example.com" />
+          </label>
+          <label>
+            Address / Delivery notes
+            <textarea id="address" placeholder="Your address" rows="2"></textarea>
+          </label>
+
+          <div class="booking-actions">
+            <button type="button" id="whatsapp-btn" class="btn">Send via WhatsApp</button>
+            <button type="button" id="email-btn" class="btn outline">Send via Email</button>
+            <button type="submit" id="save-local" class="btn ghost">Save to site (admin view)</button>
+          </div>
+
+          <p class="hint">You can use WhatsApp or Email to place order. If you want bookings visible on this site for admin, click "Save to site".</p>
+
+          <p class="hint small">If you prefer Google Form, replace this form with your <a id="gform-link" href="#" target="_blank">Google Form URL</a>.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Location -->
+    <section id="location" class="section location">
+      <div class="container">
+        <h3>Location</h3>
+        <p>Tallo Koreng, Kaligandaki-6, Gulmi</p>
+        <div class="map-wrap">
+          <!-- Google Maps iframe with coordinates -->
+          <iframe
+            width="100%"
+            height="350"
+            style="border:0"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=28.072842759127337,83.54238974308012&z=15&output=embed">
+          </iframe>
+        </div>
+        <p>Phone: <a href="tel:+9779847614064">+977 9847614064</a> • Email: <a href="mailto:lalnidhidhakal@gmail.com">lalnidhidhakal@gmail.com</a></p>
+      </div>
+    </section>
+
+    <!-- Contact / Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <h4>Lalnidhi Honey Farm</h4>
+          <p>Tallo Koreng, Kaligandaki-6, Gulmi</p>
+          <p>Phone: <a href="tel:+9779847614064">+977 9847614064</a></p>
+          <p>Email: <a href="mailto:lalnidhidhakal@gmail.com">lalnidhidhakal@gmail.com</a></p>
+        </div>
+        <div>
+          <h4>Products</h4>
+          <ul>
+            <li>Half Kg — NPR 600</li>
+            <li>1 Kg — NPR 1200</li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">© Lalnidhi Honey Farm</div>
+    </footer>
+  </main>
+
+  <!-- Admin modal (hidden) -->
+  <div id="admin-modal" class="modal">
+    <div class="modal-content">
+      <button class="close" id="close-admin">✕</button>
+      <h3>Admin Login</h3>
+      <form id="admin-login-form" class="form">
+        <label>
+          Password
+          <input type="password" id="admin-password" placeholder="Enter admin password" required>
+        </label>
+        <div class="booking-actions">
+          <button type="submit" class="btn">Login</button>
+        </div>
+      </form>
+
+      <div id="admin-panel" class="admin-panel" style="display:none;">
+        <h4>Bookings (Local)</h4>
+        <div id="bookings-list"></div>
+        <p class="hint small">Bookings saved locally in this browser (localStorage). They are not sent to server unless you use WhatsApp or Email.</p>
+        <button id="logout-admin" class="btn outline">Logout</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
